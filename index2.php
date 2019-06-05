@@ -19,10 +19,9 @@
           <div id="menuh">
          <ul>
              <li><a href="index.php" id="primero">Inicio</a></li>
-                 <li><a href="#menuh">Comentarios</a></li>
-                 <li><a href="#menuh">Noticias</a></li>
-                 <li><a href="#menuh">Contacto</a></li>
-                 <li><a href="#menuh">Acerca de nosotros</a></li>
+             <li><a href="#menuh">Comentarios/Sugerencias</a></li>
+             <li><a onclick="pulsar()">Contacto</a></li>
+             <li><a href="https://www.borntoplay.es/">Novedades</a></li>
          </ul>
  </div>
         <br>
@@ -63,3 +62,8 @@
         </div>
     </body>
 </html>
+<SCRIPT>
+function pulsar() {
+alert("Si hay algún problema no olvide contactar conmigo enviandome un correo a: jorgeesbuenagente@yopmail.com");
+}
+</SCRIPT>

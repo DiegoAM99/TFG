@@ -19,10 +19,9 @@
           <div id="menuh">
          <ul>
              <li><a href="index.php" id="primero">Inicio</a></li>
-             <li><a href="#menuh">Comentarios/Sugerencias</a></li>
-             <li><a onclick="Si hay algún problema no olvide contactar conmigo 
-                    enviandome un correo a:jorgeesbuenagente@yopmail.com">Contacto</a></li>
-                 <li><a href="https://www.borntoplay.es/">Novedades</a></li>
+             <li><a href="index.php #abajo">Comentarios/Sugerencias</a></li>
+             <li><a onclick="pulsar()">Contacto</a></li>
+             <li><a href="https://www.borntoplay.es/">Novedades</a></li>
          </ul>
  </div>
         <br>
@@ -34,7 +33,7 @@
     <input type="submit" value="Buscar" name="buscar">
 </form>
         <br>
-        <div style="width: 100%; background-color: #00aafd">
+        <div style="width: 100%; background-color: #00aafd; clear: both">
             <div>
             <img src="img/juego.jpg">
             <p>19,99€</p>
@@ -56,10 +55,43 @@
             <p>Vendedor: Rubius</p>
             <p>Vendo este juego porque lo tengo duplicado<button>Más info</button></p>
             </div>
-            <div><script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="8d6e7219_1559584545"></div></div>
-            <script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="95b420fc_1559588719"></div>
+            <div><script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="8d6e7219_1559584545"></div>
+                <script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="95b420fc_1559588719"></div><a name="abajo"></a></div>
         <button><a href="index2.php">Siguiente Página</a></button>
         </div>
+
+<div id="cajacookies">
+<p><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar y cerrar éste mensaje</button>
+Éste sitio web usa cookies, si permanece aquí acepta su uso.
+Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a>.
+</p>
+</div>
         </div>
     </body>
 </html>
+<script>
+/* ésto comprueba la localStorage si ya tiene la variable guardada */
+function compruebaAceptaCookies() {
+  if(localStorage.aceptaCookies == 'true'){
+    cajacookies.style.display = 'none';
+  }
+}
+
+/* aquí guardamos la variable de que se ha
+aceptado el uso de cookies así no mostraremos
+el mensaje de nuevo */
+function aceptarCookies() {
+  localStorage.aceptaCookies = 'true';
+  cajacookies.style.display = 'none';
+}
+
+/* ésto se ejecuta cuando la web está cargada */
+$(document).ready(function () {
+  compruebaAceptaCookies();
+});
+</script>
+<SCRIPT>
+function pulsar() {
+alert("Si hay algún problema no olvide contactar conmigo enviandome un correo a: jorgeesbuenagente@yopmail.com");
+}
+</SCRIPT>

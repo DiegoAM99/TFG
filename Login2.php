@@ -5,8 +5,6 @@
   <form action="/action_page.php">
     <div class="row">
       <h2 style="text-align:center">Inicia Sesión/Registrate</h2>
-     
-
       <div class="col">
         <a href="#" class="fb btn">
           <i class="fa fa-facebook fa-fw"></i>Entrar con Facebook
@@ -26,7 +24,8 @@
 
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <button type="submit" value="Login"><a href="index.php">Login</a></button>
+        <input type="button" type="submit" value="Login" <a href="index.php">
+        <!--<button type="submit" value="Login"><a href="index.php">Login</a></button>-->
       </div>
 
     </div>
@@ -36,10 +35,10 @@
 <div class="bottom-container">
   <div class="row">
     <div class="col">
-      <a href="#" style="color:white" class="btn">Sign up</a>
+        <a href="Registrar.php" style="color:white" class="btn">Sign up</a>
     </div>
     <div class="col">
-      <a href="#" style="color:white" class="btn">Forgot password?</a>
+        <a href="ContraseñaOlvidada.php" style="color:white" class="btn">Forgot password?</a>
     </div>
   </div>
 </div>

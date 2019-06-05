@@ -6,7 +6,7 @@
             <div>
             <p>19,99€</p>
             <p>Vendedor: Fraxito0</p>
-            <p>Vendo este juego porque ya me lo he pasado un montón de veces y me he cansado de jugarlo;
+            <p>Vendo este juego porque ya me lo he pasado un montón de veces <br>y me he cansado de jugarlo;
                 ya sé que es reciente, pero es que las misiones son siempre las mismas.</p>
             <p>Si estas interesado en el producto, llameme al: 61305645</p>
             </div>
@@ -34,7 +34,7 @@
     }
     p{
         font-size: 32px;
-        color: #0050ef;
+        color: orange;
     }
     img{
         margin-left: 30px;
