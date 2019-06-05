@@ -24,7 +24,7 @@
 
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="button" type="submit" value="Login" <a href="index.php">
+        <input type="submit" value="Login" src="index.php">
         <!--<button type="submit" value="Login"><a href="index.php">Login</a></button>-->
       </div>
 
