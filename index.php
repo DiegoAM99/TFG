@@ -14,7 +14,9 @@
             <br>
             <br>
         </div>
-          <div><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./Login2.php">Iniciar sesión</a></button></div>
+          <div><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./Login.php">Iniciar sesión</a></button></div>
+          <br>
+          <button><a href="CerrarSesion.php" onclick="pulsar2()">Cerrar Sesión</a></button>
           <br>
           <div id="menuh">
          <ul>
@@ -53,8 +55,9 @@
             <img src="img/juego3.jpg" style="text-align: center;">
             <p>25€</p>
             <p>Vendedor: Rubius</p>
-            <p>Vendo este juego porque lo tengo duplicado<button>Más info</button></p>
+            <p>Vendo este juego porque lo tengo duplicado...<button>Más info</button></p>
             </div>
+            <br>
             <div><script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="8d6e7219_1559584545"></div>
                 <script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="95b420fc_1559588719"></div><a name="abajo"></a></div>
         <button><a href="index2.php">Siguiente Página</a></button>
@@ -93,5 +96,10 @@ $(document).ready(function () {
 <SCRIPT>
 function pulsar() {
 alert("Si hay algún problema no olvide contactar conmigo enviandome un correo a: jorgeesbuenagente@yopmail.com");
+}
+</SCRIPT>
+<SCRIPT>
+function pulsar2() {
+alert("Has cerrado la sesión");
 }
 </SCRIPT>

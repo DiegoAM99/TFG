@@ -1,29 +1,45 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo2.ico">
-<head>
-<meta charset="utf-8">
-<title>Login</title></head>
-<body>
-<div>
-<center>
-<form method="POST" action="validar.php">
-    <input type="text" name="nnombre" placeholder="Usuario" style="width: 10%" />
-<br />
-<input type="password" name="npassword" placeholder="Contraseña" style="width: 10%"/>
-<br />
+<div class="container">
+    <link href="Estilos/style2.css" rel="stylesheet"/>
+  <form action="/action_page.php">
+    <div class="row">
+      <h2 style="text-align:center">Inicia Sesión/Registrate</h2>
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i>Entrar con Facebook
+        </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Entrar con Twitter
+        </a>
+        <a href="#" class="google btn">
+          <i class="fa fa-google fa-fw"></i> Entrar con Google+
+        </a>
+      </div>
 
-<button type="submit"style="width: 10%"><a href="index.php">Inicar Sesion</a></button>
-<br>
-<button><a class="js-nav EdgeButton EdgeButton--medium EdgeButton--primary StaticLoggedOutHomePage-buttonSignup" href="Registrar.php">Registrarse</a></button>
-<br>
-<a class="forgot" href="/account/begin_password_reset" rel="noopener">¿Olvidaste tu contraseña?</a>
-<br>
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
 
-</form>
-</center>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="button" type="submit" value="Login" <a href="index.php">
+        <!--<button type="submit" value="Login"><a href="index.php">Login</a></button>-->
+      </div>
+
+    </div>
+  </form>
 </div>
-</body>
 
-
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+        <a href="Registrar.php" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+        <a href="ContraseñaOlvidada.php" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
 </html>

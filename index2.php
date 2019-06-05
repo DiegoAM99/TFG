@@ -16,6 +16,8 @@
         </div>
           <div><button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./Login.php">Iniciar sesión</a></button></div>
           <br>
+          <button><a href="CerrarSesion.php" onclick="pulsar2()">Cerrar Sesión</a></button>
+          <br>
           <div id="menuh">
          <ul>
              <li><a href="index.php" id="primero">Inicio</a></li>
@@ -35,35 +37,40 @@
         <br>
         <div style="width: 100%; background-color: #00aafd">
             <div>
-            <img src="img/juego.jpg">
-            <p>19,99€</p>
-            <p>Vendedor: Fraxito0</p>
-            <p>Vendo este juego porque…<button><a href="./Producto1.php">Más info</a></button></p>
+                <img src="img/juego4.jpg">
+            <p>40€</p>
+            <p>Vendedora: Maria</p>
+            <p>Vendo este juego porque…<button><a href="./Producto2.php">Más info</a></button></p>
             </div>
             <br>
             <div>
-            <img src="img/juego2.jpg" style="text-align: center;">
+                <img src="img/juego5.jpg" style="text-align: center;">
             <p>25€</p>
-            <p>Vendedor: Juan</p>
-            <p>Vendo este juego porque no me gusta…<button>Más info</button></p>
+            <p>Vendedor: José</p>
+            <p>Vendo este juego porque me aburre y…<button>Más info</button></p>
             </div>
             <br>
             <br>
             <div>
-            <img src="img/juego3.jpg" style="text-align: center;">
-            <p>25€</p>
-            <p>Vendedor: Rubius</p>
-            <p>Vendo este juego porque lo tengo duplicado<button>Más info</button></p>
+                <img src="img/juego6.jpg" style="text-align: center;">
+            <p>30€</p>
+            <p>Vendedor: Pepe</p>
+            <p>Vendo este juego porque ya no me entretiene como antes y...<button>Más info</button></p>
             </div>
             <div><script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="8d6e7219_1559584545"></div></div>
             <script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-comments" id="95b420fc_1559588719"></div>
+            <button><a href="index.php">Anterior Página</a></button>
         </div>
-        
         </div>
     </body>
 </html>
 <SCRIPT>
 function pulsar() {
 alert("Si hay algún problema no olvide contactar conmigo enviandome un correo a: jorgeesbuenagente@yopmail.com");
+}
+</SCRIPT>
+<SCRIPT>
+function pulsar2() {
+alert("Has cerrado la sesión");
 }
 </SCRIPT>
