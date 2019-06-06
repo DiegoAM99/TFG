@@ -29,7 +29,7 @@
         <br>
         <br>
         <!--Buscador-->
-        <form method="POST" action="" onSubmit="return IE4(this)">
+        <form method="POST" action="" onSubmit="return (this)">
  
             <input type="text" placeholder="Buscar" name="palabra" style="width: 25%; height: 20px">
     <input type="submit" value="Buscar" name="buscar">
@@ -106,48 +106,5 @@ alert("Si hay algún problema no olvide contactar conmigo enviandome un correo a
 <SCRIPT>
 function pulsar2() {
 alert("Has cerrado la sesión");
-}
-</SCRIPT>
-<SCRIPT>
-var NS4 = (document.layers);    
-var IE4 = (document.all);
-var win = window;    
-var n   = 0;
-function findInPage(str) {
-  var txt, i, found;
-  if (str == "")
-    return false;
-  if (NS4) {
-    if (!win.find(str))
-      while(win.find(str, false, true))
-        n++;
-    else
-      n++;
-    if (n == 0)
-      alert("No encontrado.");
-  }
-  if (IE4) {
-    txt = win.document.body.createTextRange();
-    for (i = 0; i <= n && (found = txt.findText(str)) != false; i++) {
-      txt.moveStart("character", 1);
-      txt.moveEnd("textedit");
-    }
-    if (found) {
-      txt.moveStart("character", -1);
-      txt.findText(str);
-      txt.select();
-      txt.scrollIntoView();
-      n++;
-    }
-    else {
-      if (n > 0) {
-        n = 0;
-        findInPage(str);
-      }
-      else
-        alert("Su busqueda no produjo, ningun resultado. Intente con otro");
-   }
-  }
-  return false;
 }
 </SCRIPT>
