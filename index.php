@@ -29,12 +29,14 @@
         <br>
         <br>
         <!--Buscador-->
-        <form method="POST" action="" onSubmit="return validarForm(this)">
+        <form method="POST" action="" onSubmit="return IE4(this)">
  
             <input type="text" placeholder="Buscar" name="palabra" style="width: 25%; height: 20px">
     <input type="submit" value="Buscar" name="buscar">
 </form>
 
+ 
+</P></FORM></DIV>
  
 </P></FORM></DIV>
         <br>
